@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+}
+#headline-id{
+    color: orange;
+}
+.headline-class{
+    color: green;
+}
+*{
+    color: darkgray !important;
+}
+h1{
+    color: sienna;
+}

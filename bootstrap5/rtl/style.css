@@ -1,0 +1,77 @@
+:root {
+    --bs-blue: #e90dfd;
+    --bs-primary: #c80ec6;
+    --bs-white: #fff;
+    --bs-light: #d9dddf;
+}
+
+.btn-primary{
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover,
+.btn-primary:active{
+    background-color: var(--bs-purple);
+    border-color: var(--bs-purple);
+}
+
+.hero-carousel__caption{
+    top: 10%;
+    bottom: unset;
+    left: 10%;
+    text-align: left;
+}
+
+.product__card-body{
+    transform: translateY(-45px);
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+@media all and (min-width: 1400px){
+    .product__card-body{
+        transform: translateY(-95px);
+    }
+}
+
+.contact-form{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* dark mode */
+.dark-mode{
+    --bs-primary: #49c80e;
+    --bs-light: #343539;
+    --bs-dark: #e8eaf0;
+    --bs-white: #000;
+}
+
+.bg-light{
+    background-color: var(--bs-light) !important;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand{
+    color: var(--bs-dark);
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--bs-dark);
+    opacity: .9;
+}
+
+.carousel-caption{
+    color: var(--bs-light);
+}
+
+body{
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.card,
+.modal-content,
+.offcanvas{
+    background-color: var(--bs-white);
+}
